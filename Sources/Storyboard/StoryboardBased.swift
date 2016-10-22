@@ -15,7 +15,7 @@ import UIKit
 ///  * this ViewController is the initialViewController of your Storyboard
 ///
 /// to be able to instantiate them from the Storyboard in a type-safe manner
-public protocol StoryboardBased: class {
+public protocol StoryboardBased: class, StoryboardSceneBased {
   /// The UIStoryboard to use when we want to instantiate this ViewController
   static var storyboard: UIStoryboard { get }
 }
